@@ -4,13 +4,14 @@
 }
 
 body {
-  background: rgb(25, 100, 247);
+  background: 023e8a;
   background: linear-gradient(
     90deg,
     rgba(25, 100, 247, 1) 0%,
-    rgba(6, 186, 255, 1) 52%,
+    rgb(20, 20, 20) 52%,
     rgba(2, 137, 238, 1) 100%
   );
+  font-family: "Roboto", sans-serif;
 }
 
 .content {
@@ -32,13 +33,7 @@ body {
   border-radius: 35px;
   box-shadow: 0 0 0 3px #149df2;
 }
-/* .main-form {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-} */
+
 .label-city {
   margin-bottom: 15px;
   font-size: 25px;
@@ -68,7 +63,7 @@ body {
 }
 
 .input-container {
-  width: 275px;
+  width: 210px;
   height: 30px;
   display: flex;
   justify-content: center;
@@ -96,6 +91,10 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  color: #023e8a;
+}
+.city-title {
+  color: #023e8a;
 }
 .city-temp-min {
   grid-column-start: 1;
@@ -103,7 +102,7 @@ body {
 }
 .city-temp-max {
   grid-column-start: 1;
-  grid-row-star: 3;
+  grid-row-start: 3;
 }
 .city-temp-feels {
   grid-column-start: 2;
@@ -112,4 +111,22 @@ body {
 .city-humidity {
   grid-column-start: 2;
   grid-row-start: 2;
+}
+
+.city-temp-min,
+.city-temp-max,
+.city-temp-feels,
+.city-humidity,
+.city-temperature,
+.city-pressure {
+  transition: 0.5s;
+}
+
+.city-temp-min:hover,
+.city-temp-max:hover,
+.city-temp-feels:hover,
+.city-humidity:hover,
+.city-temperature:hover,
+.city-pressure:hover {
+  transform: scale(1.2);
 }
