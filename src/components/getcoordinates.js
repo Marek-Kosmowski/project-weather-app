@@ -1,9 +1,6 @@
 const input = document.querySelector('.input-city');
 
-function Coordinates(latitude, longitude) {
-    this.latitude = latitude;
-    this.longitude = longitude
-}
+
 
 async function getCityCoordinates() {
     try {
@@ -13,9 +10,12 @@ async function getCityCoordinates() {
         const dataRes = await response.json()
         const latCoordinates = dataRes[0].lat
         const lonCoordinates = dataRes[0].lon
+
         // console.log(parse(latCoordinates), parse(lonCoordinates))
         const newCoordinates = new Coordinates(parse(latCoordinates), parse(lonCoordinates));
+
         return newCoordinates
+
 
     } catch (err) {
         alert('Something went wrong!')
@@ -35,7 +35,4 @@ function parse(data) {
 //     }
 // })
 
-export {
-    getCityCoordinates,
-    Coordinates
-};
+export default getCityCoordinates;
