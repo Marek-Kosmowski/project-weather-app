@@ -7,7 +7,7 @@ function getCelsius(num) {
     return celsius;
 }
 
-function getfahrenheit(num) {
+function getFahrenheit(num) {
     let fahrenheit = (9 / 5) * num + 32;
     return fahrenheit;
 }
@@ -16,5 +16,5 @@ function getfahrenheit(num) {
 export {
     parse,
     getCelsius,
-    getfahrenheit
+    getFahrenheit
 };

@@ -1,6 +1,6 @@
 import starterpage from './components/starterpage'
 import {
-    getfahrenheit,
+    getFahrenheit,
     getCelsius
 } from './components/utilities'
 
