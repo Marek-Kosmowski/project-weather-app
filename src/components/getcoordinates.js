@@ -1,3 +1,4 @@
+import parse from "./utilities";
 const input = document.querySelector('.input-city');
 
 
@@ -24,9 +25,7 @@ async function getCityCoordinates() {
 
 }
 
-function parse(data) {
-    return Number.parseFloat(data).toFixed(2);
-}
+
 
 // input.addEventListener('keydown', (e) => {
 //     if (e.key === 'Enter') {
