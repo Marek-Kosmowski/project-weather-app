@@ -1,4 +1,4 @@
-import parse from "./utilities";
+import {parse} from "./utilities";
 const input = document.querySelector('.input-city');
 
 

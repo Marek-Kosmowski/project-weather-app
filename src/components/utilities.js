@@ -2,5 +2,19 @@ function parse(data) {
     return Number.parseFloat(data).toFixed(2);
 }
 
+function getCelsius(num) {
+    let celsius = (num - 32) / 1.8;
+    return celsius;
+}
 
-export default parse;
+function getfahrenheit(num) {
+    let fahrenheit = (9 / 5) * num + 32;
+    return fahrenheit;
+}
+
+
+export {
+    parse,
+    getCelsius,
+    getfahrenheit
+};
