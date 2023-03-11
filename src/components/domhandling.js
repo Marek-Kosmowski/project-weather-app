@@ -6,12 +6,7 @@ const cityTempFeels = document.querySelector('.info-data-feels');
 const cityHumidity = document.querySelector('.info-data-hum');
 const cityPressure = document.querySelector('.info-data-press');
 
-// info-data-temp
-// info-data-min
-// info-data-max
-// info-data-feels
-// info-data-hum
-// info-data-press
+
 class WeatherInfo {
     constructor(cityName, cityTemp, cityTempMin, cityTempMax, cityTempFeels, cityHumidity, cityPressure) {
         this.cityName = cityName;
@@ -24,7 +19,7 @@ class WeatherInfo {
     }
 
     //method
-    insertInfo() {
+    insertInfoFahrenheit() {
         cityTitle.innerHTML = this.cityName;
         cityTemperature.innerHTML = `${this.cityTemp}°F`;
         cityTempMin.innerHTML = `${this.cityTempMin}°F`;
@@ -33,13 +28,8 @@ class WeatherInfo {
         cityHumidity.innerHTML = `${this.cityHumidity}%`;
         cityPressure.innerHTML = `${this.cityPressure}hPa`;
     }
+
 }
 
 
 export default WeatherInfo;
-
-// function testing() {
-//     cityTitle.innerHTML = 'LIRK'
-// }
-
-// export default testing;

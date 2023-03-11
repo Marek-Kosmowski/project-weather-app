@@ -82,7 +82,7 @@ body {
   align-items: center;
   background-color: rgba(121, 205, 246, 1);
   width: 30%;
-  height: 350px;
+  height: 450px;
   border-radius: 35px;
   box-shadow: 0 0 0 3px #149df2;
 }
@@ -146,5 +146,17 @@ body {
   color: #dc2f02;
   font-style: italic;
 }
-/* .info-data {
-} */
+.change-units-slider {
+  -webkit-appearance: none;
+  width: 70px;
+  height: 30px;
+  border-radius: 30px;
+  transition: 0.1s;
+}
+.change-units-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  background-color: #023e8a;
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+}

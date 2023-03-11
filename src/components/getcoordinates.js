@@ -1,5 +1,5 @@
 import {
-    parse
+    parse,
 } from "./utilities";
 const input = document.querySelector('.input-city');
 
@@ -26,7 +26,6 @@ async function getCityCoordinates() {
     }
 
 }
-
 
 
 // input.addEventListener('keydown', (e) => {
