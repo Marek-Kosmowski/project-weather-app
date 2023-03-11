@@ -1,4 +1,6 @@
-import {parse} from "./utilities";
+import {
+    parse
+} from "./utilities";
 const input = document.querySelector('.input-city');
 
 
@@ -33,5 +35,3 @@ async function getCityCoordinates() {
 //         input.value = '';
 //     }
 // })
-
-export default getCityCoordinates;
