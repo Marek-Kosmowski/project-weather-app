@@ -87,12 +87,13 @@ body {
   box-shadow: 0 0 0 3px #149df2;
 }
 .weather-info-container {
-  width: 80%;
+  width: 60%;
   height: 60%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  justify-items: center;
+  align-items: center;
   color: #023e8a;
+  column-gap: 70px;
 }
 .city-title {
   color: #023e8a;
@@ -122,7 +123,11 @@ body {
 .city-pressure {
   transition: 0.5s;
 }
-
+.city-temp-feels,
+.city-humidity,
+.city-pressure {
+  justify-self: center;
+}
 .city-temp-min:hover,
 .city-temp-max:hover,
 .city-temp-feels:hover,
@@ -131,3 +136,15 @@ body {
 .city-pressure:hover {
   transform: scale(1.2);
 }
+
+.info-data-temp,
+.info-data-min,
+.info-data-max,
+.info-data-feels,
+.info-data-hum,
+.info-data-press {
+  color: #dc2f02;
+  font-style: italic;
+}
+/* .info-data {
+} */

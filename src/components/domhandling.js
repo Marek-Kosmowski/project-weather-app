@@ -1,12 +1,17 @@
 const cityTitle = document.querySelector('.city-title');
-const cityTemperature = document.querySelector('.city-temperature');
-const cityTempMin = document.querySelector('.city-temp-min');
-const cityTempMax = document.querySelector('.city-temp-max');
-const cityTempFeels = document.querySelector('.city-temp-feels');
-const cityHumidity = document.querySelector('.city-humidity');
-const cityPressure = document.querySelector('.city-pressure');
+const cityTemperature = document.querySelector('.info-data-temp');
+const cityTempMin = document.querySelector('.info-data-min');
+const cityTempMax = document.querySelector('.info-data-max');
+const cityTempFeels = document.querySelector('.info-data-feels');
+const cityHumidity = document.querySelector('.info-data-hum');
+const cityPressure = document.querySelector('.info-data-press');
 
-
+// info-data-temp
+// info-data-min
+// info-data-max
+// info-data-feels
+// info-data-hum
+// info-data-press
 class WeatherInfo {
     constructor(cityName, cityTemp, cityTempMin, cityTempMax, cityTempFeels, cityHumidity, cityPressure) {
         this.cityName = cityName;
@@ -21,12 +26,12 @@ class WeatherInfo {
     //method
     insertInfo() {
         cityTitle.innerHTML = this.cityName;
-        cityTemperature.innerHTML = `this.cityTemp;`
-        cityTempMin.innerHTML = `this.cityTempMin`;
-        cityTempMax.innerHTML = `this.cityTempMax`;
-        cityTempFeels.innerHTML = ` this.cityTempFeels`;
-        cityHumidity.innerHTML = `this.cityHumidity`;
-        cityPressure.innerHTML = `this.cityPressure`;
+        cityTemperature.innerHTML = `${this.cityTemp}°F`;
+        cityTempMin.innerHTML = `${this.cityTempMin}°F`;
+        cityTempMax.innerHTML = `${this.cityTempMax}°F`;
+        cityTempFeels.innerHTML = `${this.cityTempFeels}°F`;
+        cityHumidity.innerHTML = `${this.cityHumidity}%`;
+        cityPressure.innerHTML = `${this.cityPressure}hPa`;
     }
 }
 
