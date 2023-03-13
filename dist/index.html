@@ -6,8 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <script defer src="bundle2a3759abfa1f0c1ed51c.js"></script>
-</head>
+<script defer src="bundled091902330f1686149b4.js"></script></head>
 
 <body>
     <div class="content">
@@ -19,8 +18,23 @@
             </div>
         </div>
         <div class="forecast-container">
-            <h1 class="city-title">Test</h1>
-            <h3 class="city-temperature">Current temperature: 32</h3>
+            <h1 class="city-title"></h1>
+            <div class="weather-info-container">
+                <h4 class="city-temperature">Temperature: <p class="info-data-temp fahrenheit"></p>
+                </h4>
+                <h4 class="city-temp-min">Min-Temperature: <p class="info-data-min fahrenheit"></p>
+                </h4>
+                <h4 class="city-temp-max">Max-Temperature: <p class="info-data-max fahrenheit"></p>
+                </h4>
+                <h4 class="city-temp-feels">Feels Like: <p class="info-data-feels fahrenheit"></p>
+                </h4>
+                <h4 class="city-humidity">Humidity: <p class="info-data-hum"></p>
+                </h4>
+                <h4 class="city-pressure">Pressure: <p class="info-data-press"></p>
+                </h4>
+            </div>
+            <input type="range" min="1" max="2" value="1" name="change-units" class="change-units-slider"
+                id="change-units-slider">
         </div>
     </div>
 </body>

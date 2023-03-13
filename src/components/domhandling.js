@@ -28,7 +28,7 @@ class WeatherInfo {
         cityHumidity.innerHTML = `${this.cityHumidity}%`;
         cityPressure.innerHTML = `${this.cityPressure}hPa`;
     }
-
+    //method
     insertInfoCelsius() {
         cityTitle.innerHTML = this.cityName;
         cityTemperature.innerHTML = `${this.cityTemp}°C`;
@@ -40,6 +40,5 @@ class WeatherInfo {
     }
 
 }
-
 
 export default WeatherInfo;
