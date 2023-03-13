@@ -1,4 +1,4 @@
-const changeUnits = document.querySelector('.change-units-slider')
+const changeUnitsSlider = document.querySelector('.change-units-slider')
 const input = document.querySelector('.input-city')
 import {
     getCoordinates,
@@ -6,21 +6,27 @@ import {
 } from "./getdata";
 
 
-function parse(data) {
-    return Number.parseFloat(data).toFixed(2);
+function parseNum(num) {
+    return Number.parseFloat(num).toFixed(2)
 }
 
+input.addEventListener('keypress', (e) => {
+    if (e.key === 'Enter') {
+        getCoordinates(input.value)
+        changeUnitsSlider.value = 1;
+        changeUnitsSlider.style.backgroundColor = "white";
+    }
+})
 
-function changeUnitsSlider() {
-    if (changeUnits.value == 2) {
-        changeUnits.style.backgroundColor = "#fcbf49";
+
+function changeUnits() {
+    if (changeUnitsSlider.value == 2) {
+        changeUnitsSlider.style.backgroundColor = "#fcbf49";
         getWeatherCelsius(input.value)
     } else {
         getCoordinates(input.value);
     }
 }
 
-changeUnits.addEventListener('click', changeUnitsSlider)
-export {
-    parse,
-};
+changeUnitsSlider.addEventListener('click', changeUnits)
+export default parseNum;
