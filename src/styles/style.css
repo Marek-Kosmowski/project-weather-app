@@ -146,7 +146,7 @@ body {
   color: #dc2f02;
   font-style: italic;
 }
-/* .change-units-slider {
+.change-units-slider {
   -webkit-appearance: none;
   width: 70px;
   height: 30px;
@@ -160,8 +160,8 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 30px;
-} */
-
+}
+/* 
 .input-units-container {
   display: flex;
   width: 250px;
@@ -172,4 +172,4 @@ body {
 }
 .disabled {
   pointer-events: none;
-}
+} */

@@ -29,6 +29,16 @@ class WeatherInfo {
         cityPressure.innerHTML = `${this.cityPressure}hPa`;
     }
 
+    insertInfoCelsius() {
+        cityTitle.innerHTML = this.cityName;
+        cityTemperature.innerHTML = `${this.cityTemp}°C`;
+        cityTempMin.innerHTML = `${this.cityTempMin}°C`;
+        cityTempMax.innerHTML = `${this.cityTempMax}°C`;
+        cityTempFeels.innerHTML = `${this.cityTempFeels}°C`;
+        cityHumidity.innerHTML = `${this.cityHumidity}%`;
+        cityPressure.innerHTML = `${this.cityPressure}hPa`;
+    }
+
 }
 
 
