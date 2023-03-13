@@ -1,8 +1,6 @@
 import starterpage from './components/starterpage'
 import {
-    getFahrenheit,
-    getCelsius
+    getCityInfo
 } from './components/utilities'
 
-
-import testing from './components/domhandling'
+getCityInfo();

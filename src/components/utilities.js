@@ -10,14 +10,15 @@ function parseNum(num) {
     return Number.parseFloat(num).toFixed(2)
 }
 
-input.addEventListener('keypress', (e) => {
-    if (e.key === 'Enter') {
-        getCoordinates(input.value)
-        changeUnitsSlider.value = 1;
-        changeUnitsSlider.style.backgroundColor = "white";
-    }
-})
-
+function getCityInfo() {
+    input.addEventListener('keypress', (e) => {
+        if (e.key === 'Enter') {
+            getCoordinates(input.value)
+            changeUnitsSlider.value = 1;
+            changeUnitsSlider.style.backgroundColor = "white";
+        }
+    })
+}
 
 function changeUnits() {
     if (changeUnitsSlider.value == 2) {
@@ -25,8 +26,13 @@ function changeUnits() {
         getWeatherCelsius(input.value)
     } else {
         getCoordinates(input.value);
+        changeUnitsSlider.style.backgroundColor = "white";
+
     }
 }
 
 changeUnitsSlider.addEventListener('click', changeUnits)
-export default parseNum;
+export {
+    parseNum,
+    getCityInfo
+};
