@@ -146,12 +146,13 @@ body {
   color: #dc2f02;
   font-style: italic;
 }
-.change-units-slider {
+/* .change-units-slider {
   -webkit-appearance: none;
   width: 70px;
   height: 30px;
   border-radius: 30px;
   transition: 0.1s;
+  cursor: pointer;
 }
 .change-units-slider::-webkit-slider-thumb {
   -webkit-appearance: none;
@@ -159,4 +160,16 @@ body {
   width: 30px;
   height: 30px;
   border-radius: 30px;
+} */
+
+.input-units-container {
+  display: flex;
+  width: 250px;
+  justify-content: space-around;
+}
+.input-units-container label {
+  margin-right: 20px;
+}
+.disabled {
+  pointer-events: none;
 }

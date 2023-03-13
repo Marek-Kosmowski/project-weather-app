@@ -33,8 +33,14 @@
                 <h4 class="city-pressure">Pressure: <p class="info-data-press"></p>
                 </h4>
             </div>
-            <input type="range" min="1" max="2" value="1" name="change-units" class="change-units-slider"
-                id="change-units-slider">
+            <div class="input-units-container">
+                <input type="radio" id="fahrenheit" name="units" value="1" checked>
+                <label for="fahrenheit">Fahrenheit</label>
+                <input type="radio" id="celsius" name="units" value="2">
+                <label for="celsius">Celsius</label>
+            </div>
+            <!-- <input type="range" min="1" max="2" value="1" name="change-units" class="change-units-slider"
+                id="change-units-slider"> -->
         </div>
     </div>
 </body>

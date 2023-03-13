@@ -1,6 +1,7 @@
 const changeUnits = document.querySelector('.change-units-slider')
-
 const imperialUnits = document.querySelectorAll('.fahrenheit')
+const celsius = document.getElementById('celsius');
+const fahrenheit = document.getElementById('fahrenheit');
 
 function parse(data) {
     return Number.parseFloat(data).toFixed(2);
@@ -17,30 +18,49 @@ function getFahrenheit(num) {
 }
 
 
+// function changeUnitsSlider() {
+//     let isCelsius = false;
+//     if (changeUnits.value == 1 && isCelsius == false) {
+//         // changeUnits.style.backgroundColor = "#fcbf49";
+//         // imperialUnits.forEach(el => {
+//         //     el.innerHTML = `${getCelsius(parseInt(el.innerHTML))}°C`
+//         // })
 
-function changeUnitsSlider() {
-    if (changeUnits.value == 2) {
-        changeUnits.style.backgroundColor = "#fcbf49";
-        imperialUnits.forEach(el => {
-            el.innerHTML = `${getCelsius(parseInt(el.innerHTML))}°C`
-        })
-    } else {
-        changeUnits.style.backgroundColor = "white"
-        imperialUnits.forEach(el => {
-            el.innerHTML = `${getFahrenheit(parseInt(el.innerHTML))}°F`
-        })
-    }
+//         changeUnits.style.backgroundColor = "white"
+//         imperialUnits.forEach(el => {
+//             el.innerHTML = `${getFahrenheit(parseInt(el.innerHTML))}°F`
+//         })
+//         isCelsius = false
+//         console.log(isCelsius)
+//     } else {
 
-}
+//         changeUnits.style.backgroundColor = "#fcbf49";
+//         imperialUnits.forEach(el => {
+//             el.innerHTML = `${getCelsius(parseInt(el.innerHTML))}°C`
+//         })
+//         isCelsius = true;
+
+//         // changeUnits.style.backgroundColor = "white"
+//         // imperialUnits.forEach(el => {
+//         //     el.innerHTML = `${getFahrenheit(parseInt(el.innerHTML))}°F`
+//         // })
+//         // isCelsius = true;
+
+//     }
+
+// }
+
+celsius.addEventListener('click', (e)=>{
+    console.log(e.target.value)
+})
+fahrenheit.addEventListener('click', (e)=>{
+    console.log(e.target.value)
+})
 
 
-
-
-
-changeUnits.addEventListener('click', changeUnitsSlider)
+// changeUnits.addEventListener('click', changeUnitsSlider)
 export {
     parse,
     getCelsius,
     getFahrenheit,
-    changeUnitsSlider
 };

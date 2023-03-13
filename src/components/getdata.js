@@ -1,4 +1,5 @@
 const input = document.querySelector('.input-city');
+const slider = document.querySelector('.change-units-slider');
 import getForecast from "./getforecast";
 
 async function getCoordinates(data) {
@@ -22,5 +23,7 @@ function parseNum(num) {
 input.addEventListener('keypress', (e) => {
     if (e.key === 'Enter') {
         getCoordinates(input.value)
+        slider.value = 1;
+        slider.style.backgroundColor = "white";
     }
 })
